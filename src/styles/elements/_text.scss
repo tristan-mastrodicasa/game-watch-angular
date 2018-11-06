@@ -1,0 +1,81 @@
+/**
+ * File contains text specific styles
+ * Created by Tristan Mastrodicasa
+ */
+
+ /* Variables */
+
+$standard-font: Arial, Helvetica, sans-serif;
+
+/* Native Tag Styles */
+h1, h2, h3, h4, p, span, div, button, input {
+    font-family: $standard-font;
+    margin: 0;
+    padding: 0;
+}
+
+/* Splash Screen Logo (Temp) */
+
+.splash-screen-logo {
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.main-app-logo {
+    width: auto;
+    font-weight: bold;
+    font-size: 25px;
+    word-spacing: -5px;
+    color: #FFFFFF;
+}
+
+.white-title-1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.white-title-2 {
+    font-weight: bold;
+    font-size: 1.17em;
+    color: #FFFFFF;
+}
+
+.white-title-3 {
+    font-weight: bold;
+    font-size: 1.60em;
+    color: #FFFFFF;
+}
+
+.white-text-1 {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.white-text-2 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.white-text-3 {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.white-mai-text {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.black-text-1 {
+    font-size: 20px;
+}
+
+.light-link {
+    color: #808080;
+}
+
+.error-text {
+    color: #FF0000;
+}

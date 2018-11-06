@@ -1,0 +1,52 @@
+/**
+ * Root file of all SCSS to be imported to project
+ * Created by Tristan Mastrodicasa
+ */
+
+/* Vendors */
+
+@import 'vendors/angular';
+@import 'vendors/normalize';
+
+/* Helpers */
+
+@import 'helpers/variables.global';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+/* Elements */
+
+@import 'elements/text';
+@import 'elements/input';
+
+/* Components */
+
+@import 'components/event-card';
+@import 'components/info-block';
+@import 'components/info-card';
+@import 'components/listed-selectables';
+
+/* Layouts */
+
+@import 'layouts/layout.global';
+
+@import 'layouts/interfaces/minimal-back';
+@import 'layouts/interfaces/main-app';
+
+@import 'layouts/pages/loading';
+@import 'layouts/pages/sign-in';
+@import 'layouts/pages/event-browse';
+@import 'layouts/pages/event-viewer';
+@import 'layouts/pages/profile-viewer';
+@import 'layouts/pages/events';
+@import 'layouts/pages/search';
+@import 'layouts/pages/notifications';
+@import 'layouts/pages/more-options';
+@import 'layouts/pages/event-form';
+@import 'layouts/pages/profile-form';
+@import 'layouts/pages/account-form';
+@import 'layouts/pages/notification-settings';
+@import 'layouts/pages/subscription-list';
+@import 'layouts/pages/about';
+
+@import 'layouts/responsive';

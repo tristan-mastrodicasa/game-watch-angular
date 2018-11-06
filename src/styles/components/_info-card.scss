@@ -1,0 +1,114 @@
+/**
+ * File for the info card styles
+ * Created by Tristan Mastrodicasa
+ */
+
+/* Variables */
+
+$height: 50px;
+$ic-padding: 15px;
+
+.black-name { @extend .black-text-1; }
+.white-name { @extend .white-text-2; }
+
+.white-title { @extend .white-title-2; }
+.white-text { @extend .white-text-1; }
+
+/* Extendables */
+
+.ic-stack-height {
+    height: 50px;
+    float: left;
+}
+
+/* Info Card */
+
+.ic {
+    //background-color: #FFFFFF;
+    //padding: 10px;
+}
+
+.ic > div {
+    width: auto;
+}
+
+/* Complementary image for the card */
+
+.ic-img {
+    @extend .ic-stack-height;
+    padding-right: $ic-padding;
+}
+
+/* One version of the info card description
+ * encompassing one line of text */
+
+.ic-name {
+    @extend .ic-stack-height;
+    line-height: 50px;
+}
+
+.ic-name-black {
+	@extend .black-name;
+	@extend .ic-name;
+}
+
+.ic-name-white {
+	@extend .white-name;
+	@extend .ic-name;
+}
+
+/* Another version of teh info card description
+ * encompassing two lines of text, one a title
+ * another as a description */
+
+.ic-breif, .ic-breif-white {
+    @extend .ic-stack-height;
+    margin-right: 40px;
+}
+
+.ic-breif-white > h3 {
+    @extend .white-title;
+    margin: 4px 0 4px 0;
+}
+
+.ic-breif-white > p {
+    @extend .white-text;
+}
+
+/* The extra actions or icons for the card */
+
+.ic-extra {
+    height: 50px;
+    max-width: 50px !important;
+    float: right;
+    padding: 0 $ic-padding 0 $ic-padding;
+}
+
+.ic-x {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+.ic-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-top: 17.5px;
+    background-color: #FFFFFF;
+}
+
+/* Styles for when an extra icon is displayed */
+
+.ic-breif-action {
+    float: none;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.ic-breif-action > h3 {
+    height: 21px;
+    overflow: hidden;
+}

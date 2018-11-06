@@ -1,0 +1,203 @@
+/**
+ * File contains input styles
+ * Created by Tristan Mastrodicasa
+ */
+
+/* Extendable Layout Styles */
+
+.button {
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.light-rounded {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-error {
+    border-color: #FF0000 !important;
+}
+
+.light-rounded-white {
+    @extend .light-rounded;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.b-light-rounded-white {
+    @extend .button;
+    @extend .light-rounded-white;
+}
+
+.input:focus {
+    outline: none;
+    border-color: $focus-color;
+}
+
+.input-light {
+    @extend .input;
+    border: 1px solid #D1D5DA;
+    border-radius: 5px;
+    background-color: #FAFBFC;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+/* Standard Buttons */
+
+.b-light-rounded-white-medium {
+    @extend .b-light-rounded-white;
+    font-size: 20px;
+}
+
+.b-light-rounded-white-small {
+    @extend .b-light-rounded-white;
+    font-size: 15px;
+    padding: 7px;
+    word-wrap: break-word;
+}
+
+/* Standard Inputs */
+
+.t-light-thick {
+    @extend .input-light;
+    padding: 13px;
+    font-size: 17px;
+}
+
+.t-light-normal {
+    @extend .input-light;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.s-light-custom {
+    @extend .light-rounded-white;
+    padding: initial;
+    position: relative;
+    display: block;
+
+    z-index: 5;
+}
+
+/* Standard Select Input */
+
+/* Default Version */
+.s-light-custom select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 15px 55px 15px 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.s-light-custom option {
+    background-color: $primary-color-2;
+}
+
+.s-light-custom:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 45px;
+    content: 'v';
+    text-align: center;
+    font-size: 20px;
+    border-left: 2px solid #FFFFFF;
+    z-index: -1;
+}
+
+/* Normal Version */
+.s-medium select {
+    padding: 10px 45px 10px 10px;
+    font-size: 15px;
+}
+
+.s-medium:after {
+    width: 40px;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+/* File Inputs */
+
+.f-medium {
+    zoom: 110%;
+}
+
+/* Standard Checkbox */
+
+/* Custom 1 */
+.c-custom-1 {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.c-custom-1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.c-custom-1 > span {
+    @extend .light-rounded-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    padding: initial;
+    margin-left: -22px;
+}
+
+.c-custom-1:hover input ~ span {
+    //background-color: #ccc;
+}
+
+.c-custom-1 input:checked ~ span {
+    background-color: #FFFFFF;
+}
+
+.c-custom-1 > span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.c-custom-1 input:checked ~ span:after {
+    //display: block;
+}
+
+.c-custom-1 span:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

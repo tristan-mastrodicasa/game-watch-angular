@@ -1,0 +1,270 @@
+<div class="event-form-c main-app-offset">
+
+  <form class="mb-15-c">
+
+    <div class="ib">
+
+      <h2 class="ib-heading">Banner Image</h2>
+
+      <div class="ib-content-c">
+        <input type="file" class="white-text-1 f-medium ib-last">
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <h2 class="ib-heading">Event Description</h2>
+
+      <div class="ib-content-c">
+
+        <div class="s-light-custom">
+
+          <select>
+            <option>Game</option>
+            <app-game-options></app-game-options>
+          </select>
+
+        </div>
+
+        <input type="text" placeholder="Event Title" class="t-light-thick">
+
+        <textarea class="t-light-thick event-form-textarea ib-last" placeholder="Event Description"></textarea>
+
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <h2 class="ib-heading">When</h2>
+
+      <div class="ib-content-c">
+
+        <div>
+
+          <div class="left-1-3 p-r-5">
+
+            <div class="s-light-custom s-medium">
+
+              <select>
+                <option value="n">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="left-1-3 p-l-5 p-r-5">
+
+            <div class="s-light-custom s-medium">
+
+              <select>
+                <option value="n">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sept</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="left-1-3 p-l-5">
+
+            <div class="s-light-custom s-medium">
+
+              <select>
+                <option value="n">Year</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="clb"></div>
+
+        </div>
+
+      <div class="ib-last">
+
+          <div class="left-1-3 p-r-5">
+
+              <div class="s-light-custom s-medium">
+
+                  <select>
+                      <option value="n">Hour</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                  </select>
+
+              </div>
+
+          </div>
+
+          <div class="left-1-3 p-l-5 p-r-5">
+
+              <div class="s-light-custom s-medium">
+
+                  <select>
+                      <option value="n">Min</option>
+                      <option value="0">00</option>
+                      <option value="15">15</option>
+                      <option value="30">30</option>
+                      <option value="45">45</option>
+                  </select>
+
+              </div>
+
+          </div>
+
+          <div class="left-1-3 p-l-5">
+
+            <div class="s-light-custom s-medium">
+
+              <select>
+                  <option value="am">AM</option>
+                  <option value="pm">PM</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="clb"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <h2 class="ib-heading">Server Location</h2>
+
+      <div class="ib-content-c">
+
+        <input type="text" placeholder="Server Address" class="t-light-thick">
+
+        <div class="s-light-custom ib-last">
+
+          <select>
+            <option>Region</option>
+            <app-region-options></app-region-options>
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <h2 class="ib-heading">Communication</h2>
+
+      <div class="ib-content-c">
+
+        <input type="text" placeholder="Voice Service (e.g. In-game, Discord)" class="t-light-thick">
+        <input type="text" placeholder="Voice Server" class="t-light-thick ib-last">
+
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <h2 class="ib-heading">Who</h2>
+
+      <div class="ib-content-c">
+
+        <input type="number" placeholder="Target Players" class="t-light-thick ib-last">
+
+      </div>
+
+    </div>
+
+    <div class="ib">
+
+      <div class="ib-content-c">
+
+        <div class="ib-last">
+
+          <div>
+
+            <div class="left-1-2">
+              <p class="white-text-1 light-link center-cancel-event">Cancel Event</p>
+            </div>
+
+            <div class="left-1-2">
+              <div class="b-light-rounded-white-medium">Save</div>
+            </div>
+
+            <div class="clb"></div>
+
+          </div>
+
+          <!--<div class="b-light-rounded-white-medium">Submit</div>-->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+
+</div>

@@ -1,0 +1,56 @@
+/**
+ * File contains styles for the info blocks
+ * Created by Tristan Mastrodicasa
+ */
+
+/* Variables */
+
+$ib-padding: 10px;
+
+.block-text { @extend .white-text-1; }
+.block-heading { @extend .white-title-2; }
+
+/* Info Block Syles */
+
+.ib-heading {
+	@extend .block-heading;
+	padding-left: $ib-padding;
+	padding-right: $ib-padding;
+	padding-bottom: 4px;
+}
+
+.ib-content-c {
+	background-color: $primary-color-1;
+	padding: $ib-padding;
+  border-radius: 5px;
+}
+
+.ib-content p, .ib-label p {
+	@extend .block-text;
+}
+
+.ib-content > p {
+	margin-left: 5px;
+}
+
+.ib-content-c > * {
+	margin-bottom: $ib-padding;
+}
+
+.ib-label {
+	width: 40%;
+	float: left;
+}
+
+.ib-content {
+	width: 60%;
+	float: left;
+}
+
+.ib-last {
+   margin-bottom: 0px !important;
+}
+
+.ib-no-background {
+	background-color: transparent !important;
+}

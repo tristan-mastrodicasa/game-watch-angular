@@ -1,0 +1,98 @@
+/**
+ * File contains styles for the event cards
+ * Created by Tristan Mastrodicasa
+ */
+
+/* Variables */
+
+$ecm-padding: 10px;
+
+/* Event Card Global Styles */
+
+.ec {
+    border: 1px solid $primary-color-1;
+    background-color: $primary-color-1;
+}
+
+.ec-last {
+    margin: 0 !important;
+}
+
+/* Normal Event Card */
+
+.ec > .ec-img {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+.ec > .ec-img > img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.ec > .ec-breif {
+    padding: $ecm-padding;
+}
+
+.ec > .ec-breif > * {
+    margin-bottom: $ecm-padding;
+}
+
+.ec > .ec-breif > h3 {
+    font-size: 1.17em;
+    color: #FFFFFF;
+}
+
+.ec > .ec-breif > h4 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.ec > .ec-breif > p {
+    font-size: 1em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ec > .ec-attributes {
+    padding: $ecm-padding;
+    padding-top: 0px;
+}
+
+.ec > .ec-attributes > div {
+    width: 33.33%;
+    float: left;
+}
+
+.ec > .ec-attributes p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+.ec > .ec-attributes img {
+    height: 0.75em;
+    margin-right: 0.4em;
+}
+
+/* Large Event Card */
+
+.ecl {
+    border-width: 0px;
+}
+
+.ecl > .ec-img {
+    height: 180px;
+}
+
+.ecl > .ec-breif > p { /* GW Exclusive */
+    margin-bottom: $ecm-padding;
+}

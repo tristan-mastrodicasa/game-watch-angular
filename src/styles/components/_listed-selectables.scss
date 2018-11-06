@@ -1,0 +1,24 @@
+/**
+ * File for the listed selectable styles
+ * Created by Tristan Mastrodicasa
+ */
+
+ /* Variables */
+
+$ls-padding: 15px;
+
+.text { @extend .white-text-2; }
+
+ /* Extendables */
+
+ /* Listed Selectables */
+
+.ls {
+	padding: $ls-padding;
+	border-bottom: 1px solid #D1D5DA;
+  cursor: pointer;
+}
+
+.ls > p {
+	@extend .text;
+}
