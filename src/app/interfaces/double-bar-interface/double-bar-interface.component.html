@@ -4,13 +4,13 @@
 
 		<div class="vert-center-c ma-inner-bar-1">
 
-			<img src="assets/static-img/gw-logo.svg" class="ma-top-bar-logo vert-center-c">
+			<img src="assets/static-img/gw-logo.svg" class="ma-top-bar-icon vert-center-c" [hidden]="mainPage">
+      <img src="assets/static-img/arrow-left.svg" class="ma-top-bar-icon vert-center-c" [hidden]="!mainPage" (click)="goBack()">
 			<img src="assets/static-img/default-profile-picture.svg" class="ma-top-bar-img" routerLink="/app/profile">
 
 			<div class="ma-top-bar-search-c">
 				<img src="assets/static-img/magnifying-glass.svg" class="ma-top-bar-search vert-center-c" routerLink="/app/search">
 			</div>
-
 
 			<div class="clb"></div>
 
@@ -44,7 +44,7 @@
 
 	</div>
 
-	<div class="ma-options-c" routerLink="/app/more-options">
+	<div class="ma-options-c" routerLink="/app/more">
 
 		<img src="assets/static-img/more.svg" class="ma-icon">
 		<p class="white-mai-text text-center">More</p>

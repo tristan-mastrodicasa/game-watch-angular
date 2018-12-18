@@ -22,6 +22,10 @@ span {
 
 /* Extendable Layout Styles */
 
+.invisible {
+  display: none;
+}
+
 .fill {
 	display: block;
 	width: 100%;
@@ -165,16 +169,16 @@ span {
 
 /* Popup Box */
 
-.pop-up-box {
+app-loading > div {
 	@extend .fill;
 
 	position: fixed;
 	z-index: 100;
-	background-color: #3B3D42;
-	background-color: rgba(255,255,255,0.5);
+	background-color: $primary-color-2;
+	/*background-color: rgba(255,255,255,0.5);*/
 }
 
-.pop-up-content {
+/*.pop-up-content {
 	display: block;
 	width: 75%;
 	padding: $standard-padding-2;
@@ -182,4 +186,14 @@ span {
 
 	background-color: $primary-color-2;
 	border-radius: 1px;
+}*/
+
+/* Normalize v7 overrides */
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+  background-color: inherit;
 }

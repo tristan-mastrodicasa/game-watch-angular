@@ -5,9 +5,11 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 
 import { GameOptionsComponent } from './partials/game-options/game-options.component';
@@ -17,8 +19,6 @@ import { DoubleBarInterfaceComponent } from './interfaces/double-bar-interface/d
 import { MinimalBackInterfaceComponent } from './interfaces/minimal-back-interface/minimal-back-interface.component';
 
 import { EventBrowseComponent } from './pages/event-browse/event-browse.component';
-import { LoadingComponent } from './pages/loading/loading.component';
-import { SignInUsernameComponent } from './pages/sign-in-username/sign-in-username.component';
 import { EventsComponent } from './pages/events/events.component';
 import { EventViewerComponent } from './pages/event-viewer/event-viewer.component';
 import { ProfileViewerComponent } from './pages/profile-viewer/profile-viewer.component';
@@ -31,7 +31,8 @@ import { AccountFormComponent } from './pages/account-form/account-form.componen
 import { NotificationSettingsComponent } from './pages/notification-settings/notification-settings.component';
 import { SubscriptionListComponent } from './pages/subscription-list/subscription-list.component';
 import { AboutComponent } from './pages/about/about.component';
-import { SignInPasswordComponent } from './pages/sign-in-password/sign-in-password.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 
 @NgModule({
@@ -42,8 +43,6 @@ import { SignInPasswordComponent } from './pages/sign-in-password/sign-in-passwo
     DoubleBarInterfaceComponent,
     MinimalBackInterfaceComponent,
     EventBrowseComponent,
-    LoadingComponent,
-    SignInUsernameComponent,
     EventsComponent,
     EventViewerComponent,
     ProfileViewerComponent,
@@ -56,11 +55,15 @@ import { SignInPasswordComponent } from './pages/sign-in-password/sign-in-passwo
     NotificationSettingsComponent,
     SubscriptionListComponent,
     AboutComponent,
-    SignInPasswordComponent
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

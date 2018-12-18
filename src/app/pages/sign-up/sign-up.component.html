@@ -1,0 +1,22 @@
+<div class="intro-page-c fill">
+
+  <div class="mb-30-c">
+    <img src="assets/static-img/gw-logo-full.svg" class="full-width center">
+  </div>
+
+  <form class="mb-30-c" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div>
+      <input type="text" formControlName="username" placeholder="Username" class="t-light-thick" [class.red-border]="usernameError != ''">
+      <p class="white-text-1 error-text">{{ usernameError }}</p>
+    </div>
+
+    <input type="password" formControlName="password" placeholder="Password" class="t-light-thick">
+
+    <!--<input type="captcha">-->
+
+    <button type="submit" class="b-light-rounded-white-medium">Sign Up</button>
+
+    <p class="text-center white-text-1" routerLink="/sign-in">Already have an account?</p>
+  </form>
+
+</div>
